@@ -1,32 +1,44 @@
 #include <stdio.h>
+
 /**
  * main - entry point
  *
  * Return: alway returns 0
  *
  */
+
 int main(void)
 {
+	int tens;
+	int ones;
 	int i;
 	int j;
 
-	for (i = 0; i <= 99; i++)
+	for (tens = '0'; ones <= '9'; tens++)
 	{
-		for (j = i + 1; j <= 99; j++)
+		for (ones = '0'; ones <= '9'; ones++)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');putchar(j % 10 + '0');
-
-			if (!(i == 98 && j == 99))
+			for (i = tens; i <= '9'; i++)
 			{
-				putchar(',');
-				putchar(' ');
+				for (j = ones + 1; j <= '9'; j++)
+				{
+					putchar(tens);
+					putchar(ones);
+					putchar(' ');
+					putchar(i);
+					putchar(j);
+					if (!((tens == '9' && ones == '8'))
+					&&
+					(i == '9' && j == '9'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				j = '0'
 			}
 		}
 	}
 	putchar('\n');
-	return (0);
+	return (0)
 }
