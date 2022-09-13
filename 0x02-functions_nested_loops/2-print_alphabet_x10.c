@@ -5,23 +5,17 @@
  *
  * Return: Always 0.
  */
-void print_alphabet_x10(void) /*print alphabet function*/
+void print_alphabet_x10(void)
 {
-	int alphabet;
-	int count;
+	char i;
+	char h;
 
-
-	count = 0;
-	while (count < 10)
+	for (h = 0; h <= 9; h++)
 	{
-		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
+		for (i = 'a'; i <= 'z'; i++)
 		{
-			_putchar(alphabet);
+			_putchar(i);
 		}
-
-		count++;
 		_putchar('\n');
 	}
-
-
 }
