@@ -2,34 +2,29 @@
 
 /**
  * print_triangle
- * @size: variable
+ * @size: the size of the triangle.
  * Return: Always 0.
  */
 void print_triangle(int size)
 {
-	int count, i
-		count = 0;
+	int hash, index;
+
 	if (size > 0)
 	{
-		while (count < size)
+		for (hash = 1; hash <= size; hash++)
 		{
-			i = size;
-			while (i > count + 1)
-			{
-				i--;
+			for (index = size - hash; index > 0; index--)
 				_putchar(' ');
-			}
-			while (i > 0)
-			{
+
+			for (index = 0; index < hash; index++)
 				_putchar('#');
-				i--;
-			}
-			count++;
+
+			if (hash == size)
+				continue;
+
 			_putchar('\n');
 		}
 	}
-	else
-	{
-		_putchar('\n');
-	}
+
+	_putchar('\n');
 }
