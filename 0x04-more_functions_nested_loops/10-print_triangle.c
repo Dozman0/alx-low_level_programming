@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_triangle
+ * print_triangle - prints a triangle, followed by a new line.
  * @size: the size of the triangle.
  * _putchar: reference to _putchar.c file
  * Return: Always 0.
