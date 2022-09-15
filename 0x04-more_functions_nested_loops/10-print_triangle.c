@@ -3,6 +3,7 @@
 /**
  * print_triangle
  * @size: the size of the triangle.
+ * _putchar: reference to _putchar.c file
  * Return: Always 0.
  */
 void print_triangle(int size)
