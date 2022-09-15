@@ -2,7 +2,6 @@
 
 /**
  * main - Finds and prints the largest prime
- * 
  * Return: Always 0.
  */
 int main(void)
