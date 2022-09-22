@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * a function that copies at most an inputted number
- *	of bytes from string src into dest.
+ * _strncpy - a function that copies at most an inputted
+ *	num of bytes from string src into dest.
  * @dest: The buffer storing the string copy.
  * @src: The source string.
  * @n: The maximum number of bytes to copied from src.
