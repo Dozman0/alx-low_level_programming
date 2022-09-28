@@ -2,7 +2,8 @@
 #include <string.h>
 
 /**
- * a function that prints a string, followed by a new line.
+ * _puts_recursion - Prints a string, followed by a new line.
+ * file : a function that prints a string, followed by a new line.
  * @s : parameter
  */
 
