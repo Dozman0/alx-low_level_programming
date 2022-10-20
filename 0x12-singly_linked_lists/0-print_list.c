@@ -1,26 +1,19 @@
 #include "lists.h"
-
 /**
- * print_list - prints list.
- * @h: param list
- * Return: struct
+ * print_listint - prints integers in list
+ * @h: struct listint_t type
+ * Return: size_t value
  */
-
-int main(){
-size_t print_list(const list_t *h)
+size_t print_listint(const listint_t *h)
 {
-	size_t l_node;
+	size_t count = 0;
 
-	l_node = 0;
 	while (h != NULL)
 	{
-		if (h->str == NULL)
-			printf("[%d] %s\n", 0, "(nil)");
-		else
-			printf("[%d] %s\n", h->len, h->str);
+		printf("%d\n", h->n);
+		count++;
 		h = h->next;
-		l_node++;
 	}
-	return (l_node);
-}
+
+	return (count);
 }
