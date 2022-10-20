@@ -6,6 +6,7 @@
  * Return: struct
  */
 
+int main(){
 size_t print_list(const list_t *h)
 {
 	size_t l_node;
@@ -21,4 +22,5 @@ size_t print_list(const list_t *h)
 		l_node++;
 	}
 	return (l_node);
+}
 }
